@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Photo Pro</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #222;
+            color: white;
+        }
+
+        .info {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: rgba(0, 0, 0, .7);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding:36px 0px; font-size: 28px; display: flex;">
+        <div
+            style="display:inline-block; background-color: rgb(181, 0, 0); border-radius: 50%; width:2em; height:2em; transform: translateY(.06em);">
+            紅球創意
+        </div>
+        <div style="margin: 20px;">
+            M<span style="color:#888">agic</span> P<span style="color:#888">hoto</span> P<span
+                style="color:#888">ro</span>
+            <div style="font-size: 18px;">照片風格化服務</div>
+        </div>
+    </div>
+    <div
+        style="display: flex; width: 100vw; overflow-x: scroll; border-top: 3px solid rgb(181, 0, 0);background-color: #000; box-shadow: 0px 5px 5px #111;">
+        <div style="position:relative; width:70vw;">
+            <div class="info">
+                原圖-深坑老街</div>
+            <img src="./sample/street.jpg" style="height:70vh" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                A.黑白線稿 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-sketch-line.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                B.類油畫 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-brush.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                C.彩色鉛筆稿 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-sketch-color.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                D.卡通邊框 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-toon1.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                E.卡通邊框與創意填色 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-toon2.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                F.ASCII創意矩陣 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/street-matrix.png" style="height:70vh; opacity: .3; transition: opacity .5s;"
+                onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=.3" />
+        </div>
+        <div style="position:relative; width:70vw;">
+            <div class="info" style="width: 70vw;">
+                已捲動到底，未來將新增更多風格，敬請期待</div>
+        </div>
+    </div>
+    <div>
+        <h3>對比圖範例展示</h3>
+        <div style="margin-bottom: 20px;">
+            <img src="./sample/coffee.jpg" style="width:500px;box-shadow: 0px 10px 10px black;" />
+            <img src="./sample/coffee.png" style="width:500px;box-shadow: 0px 10px 10px black;" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <img src="./sample/art-center.jpg" style="width:500px;box-shadow: 0px 10px 10px black;" />
+            <img src="./sample/art-center.png" style="width:500px;box-shadow: 0px 10px 10px black;" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <img src="./sample/flower.jpg" style="width:500px;box-shadow: 0px 10px 10px black;" />
+            <img src="./sample/flower.png" style="width:500px;box-shadow: 0px 10px 10px black;" />
+        </div>
+    </div>
+    <div
+        style="position:fixed; top:0px;right:0px; width:330px;height:100vh; background-color: rgba(0, 0, 0, .5);backdrop-filter: blur(10px);padding: 20px; box-sizing: border-box;overflow: scroll;">
+        <span style="font-size: 14px;color:#CCC">請用桌機瀏覽以達最佳體驗<br>橫向捲動以看到更多圖案風格</span>
+        <h3>服務介紹</h3>
+        <div style="font-size: 14px;">大家好，我是
+            William77，歡迎攝影師們來了解個人推出的照片風格化服務，新手接案請多多指教。AI繪圖在現行的法制下無法享有著作權，而透過未經授權的圖片生成AI作品，可能涉及侵權，特別是以圖生圖的情況。在此，個人提供的服務無AI生圖版權的疑慮，生成作品購買後版權屬於客戶。產品將以數位檔交付，您也可以利用數位印刷的方式盈利，例如T-Shirt、畫作、手機殼等輸出品。本服務無法識別圖片源自何處，若有侵權，法律責任歸屬於買家，特此告知。
+        </div>
+        <h3>商品屬性</h3>
+        <div style="font-size: 14px;">
+            照片風格化的服務，讓攝影師的作品有新的詮釋。與AI相異之處在於本服務對於風格有更好的掌握力，同時享有版權保護。成品是否為藝術品，在於攝影師的創作理念、構圖、主題、想要傳達的意念等等綜合因素。</div>
+        <h3>商品售價</h3>
+        <div style="font-size: 14px;">
+            目前風格轉換服務單張原價台幣6990元，新品特惠價打8折為台幣5592元，客戶同意將作品作為官方行銷素材可抵台幣500元(客戶需提供作品名稱與作品說明，作品可能放在官方臉書、IG或Threads展示)
+        </div>
+        <h3>服務說明</h3>
+        <div style="margin-bottom: 7px;font-size: 14px;">一. 這是一個照片風格化的服務，透過程式運算將照片轉成指定的視覺風格，非AI製成。</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">二. 可接收各式圖片，請確保圖片為您所有，輸出的圖片與原始的圖片尺寸一致，若需要印刷請備妥高清圖片。</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">三. 交件前會供給客戶低清預覽版本，付款後會給予高清版。</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">四. 未來會增加更多的風格供客戶選擇</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">五. 週一至週五晚上7點 ~ 10點為個人工作時間</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">六. 畫素低於1024x1024不收件</div>
+        <div style="margin-bottom: 7px;font-size: 14px;">七. 商業合作請臉書私訊</div>
+        <h5 style="text-align: right;">文案更新日期 20250329</h5>
+        <a style="color: rgb(181, 0, 0);background-color: white;" href="https://www.facebook.com/william77.fun"
+            target="_blank">作者臉書連結</a>
+    </div>
+
+</body>
+
+</html>
