@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body style="background: #222;color: white; overflow: hidden;">
+<body style="background: #222;color: white;">
     <div style="padding:20px 15px; font-size: 28px; display: flex;">
         <div
             style="display:inline-block; background-color: rgb(181, 0, 0); border-radius: 50%; width:2em; height:2em; transform: translateY(.06em);">
@@ -52,10 +52,32 @@
     </div>
     <div style="padding:20px 15px; width:70vw">
         <div class="info">
-            原始照片 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
-        <img id="photo" src="./sample/原始照片.jpg" style="height:70vh;  transition: opacity .5s;" />
+            <span style="background-color: rgb(181, 0, 0);">新品</span>
+        </div><br>
+        <img id="photo" src="./sample/原始照片.jpg" style="width:70vw;  transition: opacity .5s;" />
     </div>
     <button style="position:fixed; right:10px; top:10px;" onclick="panel.style.display='block'">介紹</button>
+
+    <div style="padding:20px 15px;">
+        <div>轉換範例</div><br>
+        <div>
+            <img src="./cworks/art-center-ball-before.png" style="width:45vw;" />
+            <img src="./cworks/art-center-ball-after.png" style="width:45vw;" />
+        </div>
+        <div>
+            <img src="./cworks/art-center-way-before.png" style="width:45vw;" />
+            <img src="./cworks/art-center-way-after.png" style="width:45vw;" />
+        </div>
+        <div>
+            <img src="./cworks/breeze-before.png" style="width:45vw;" />
+            <img src="./cworks/breeze-after.png" style="width:45vw;" />
+        </div>
+        <div>
+            <img src="./cworks/building-before.png" style="width:45vw;" />
+            <img src="./cworks/building-after.png" style="width:45vw;" />
+        </div>
+    </div>
+
     <div id="panel"
         style="position:fixed; top:0px;right:0px; width:330px;height:100vh; background-color: rgba(0, 0, 0, .8);backdrop-filter: blur(10px);padding: 20px; box-sizing: border-box;overflow: scroll;">
         <div style="text-align: right; cursor: pointer;" onclick="panel.style.display='none'">關閉</div>
@@ -86,6 +108,7 @@
         <a style="color: rgb(181, 0, 0);background-color: white;" href="https://www.facebook.com/william77.fun"
             target="_blank">作者臉書連結</a>
     </div>
+
 </body>
 
 </html>
