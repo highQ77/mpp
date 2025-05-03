@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            cursor: pointer;
+            border-radius: 5px;
+            width: 43px;
+            height: 20px;
+            background: #111;
+            border: 1px solid white;
+            color: white;
+        }
+
+        button:hover {
+            background-color: rgb(181, 0, 0);
+            color: white;
+            border-radius: 5px;
+        }
+
+        #slide>div {
+            /* margin-right: 20px; */
+        }
+
+        #slide>div img {
+            margin-top: 20px;
+            box-shadow: 0px 0px 20px #111;
+        }
+    </style>
+</head>
+
+<body style="background: #222;color: white; overflow: hidden;">
+    <div style="padding:36px 15px; font-size: 28px; display: flex;">
+        <div
+            style="display:inline-block; background-color: rgb(181, 0, 0); border-radius: 50%; width:2em; height:2em; transform: translateY(.06em);">
+            紅球創意
+        </div>
+        <div style="margin: 20px;">
+            M<span style="color:#888">agic</span> P<span style="color:#888">hoto</span> P<span
+                style="color:#888">ro</span>
+            <div style="font-size: 18px;">照片風格化服務</div>
+        </div>
+    </div>
+
+    <div style="padding:0px 15px; height:20px;">
+        <button onclick="slide.style.left='0px'">-</button>
+        <button onclick="slide.style.left='calc(-910.55px * 1)'">A</button>
+        <button onclick="slide.style.left='calc(-910.55px * 2)'">B</button>
+        <button onclick="slide.style.left='calc(-910.55px * 3)'">C</button>
+        <button onclick="slide.style.left='calc(-910.55px * 4)'">D</button>
+        <button onclick="slide.style.left='calc(-910.55px * 5)'">E</button>
+        <button onclick="slide.style.left='calc(-910.55px * 6)'">F</button>
+        <button onclick="slide.style.left='calc(-910.55px * 7)'">G</button>
+        <button onclick="slide.style.left='calc(-910.55px * 8)'">H</button>
+        <button onclick="slide.style.left='calc(-910.55px * 9)'">I</button>
+        <button onclick="slide.style.left='calc(-910.55px * 10)'">J</button>
+        <button onclick="panel.style.display='block'">介紹</button>
+    </div>
+    <div id="slide"
+        style="position:absolute; display: flex; width: 100vw; left:0px; transition:left 1s; margin-left: 20px; margin-top: 15px;">
+        <div style="position:relative; width:70vw;">
+            <div class="info">
+                原圖-深坑老街</div>
+            <img src="./sample/原始照片.jpg" style="height:70vh" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                A.刺繡 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/刺繡.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                B.弧線陣列 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/弧線陣列.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                C.拼貼畫 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/拼貼畫.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                D.文字雨 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/文字雨.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                E.刮漆 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/刮漆.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                F.雙色調 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/雙色調.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                G.雨 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/雨.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                H.顏色分層 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/顏色分層.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                I.點點 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/點點.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw">
+            <div class="info">
+                J.強烈印痕 <span style="background-color: rgb(181, 0, 0);">新品</span></div>
+            <img src="./sample/強烈印痕.png" style="height:70vh;  transition: opacity .5s;" />
+        </div>
+        <div style="position:relative; width:70vw;">
+            <div class="info" style="width: 70vw;">
+            </div>
+            <div style="background-color: #111; width: 70vw; height:100%;padding: 10px; color: #999;">
+                已捲動到底，未來將新增更多風格，敬請期待</div>
+        </div>
+    </div>
+    <div id="panel"
+        style="position:fixed; top:0px;right:0px; width:330px;height:100vh; background-color: rgba(0, 0, 0, .8);backdrop-filter: blur(10px);padding: 20px; box-sizing: border-box;overflow: scroll;">
+        <div style="text-align: right; cursor: pointer;" onclick="panel.style.display='none'">關閉</div>
+        <span style="font-size: 14px;color:#CCC">請用桌機瀏覽以達最佳體驗</span>
+        <h3>服務介紹</h3>
+        <div style="font-size: 14px;">大家好，我是
+            William77，歡迎攝影師、圖像工作者們來了解個人推出的照片風格化服務<!--，新手接案請多多指教-->。AI繪圖在現行的法制下無法享有著作權，而透過未經授權的圖片生成AI作品，可能涉及侵權，特別是以圖生圖的情況。在此，個人提供的服務無AI生圖版權的疑慮，生成作品購買後版權屬於客戶。產品將以數位檔交付，您也可以利用數位印刷的方式盈利，例如T-Shirt、畫作、手機殼等輸出品。本服務無法識別圖片源自何處，若有侵權，法律責任歸屬於買家，特此告知。
+        </div>
+        <h3>商品屬性</h3>
+        <div style="font-size: 14px;">
+            照片風格化的服務，讓您的作品有新的詮釋。與AI相異之處在於本服務對於風格有更好的掌握力，同時享有版權保護。成品是否為藝術品，在於您的創作理念、構圖、主題、想要傳達的意念等等綜合因素。<br>
+        </div>
+        <h3>商品售價</h3>
+        <div style="font-size: 14px;">
+            一、<span style="color: yellow;">目前風格轉換服務前 100 名免費 (自2025/05/02)</span> (需加作者臉書好友，也同意將作品作為官網行銷素材)<br><br>
+            二、<span style="color: yellow;">單張轉換原價新台幣 2700 元，新品單張轉換新台幣 1700 元，目前皆為新品</span> (同意將作品作為官網行銷素材折抵新台幣 200
+            元，加臉書好友再折抵 200 元)
+        </div>
+        <div style="font-size: 14px;margin-top:1em;">PS.</div>
+        <div style="font-size: 14px;margin-top:1em;">
+            關於100人免費活動。即加臉書好友免費圖片風格轉換一次，名額有限送完為止，免費條件是同意將您的作品作為官方展示素材。以下提供 google form
+            報名<a href="https://docs.google.com/forms/d/e/1FAIpQLScb0vUqMTyqLy-vvgpov1_cKLBOhWsG_eItxuITnXhuFPqopw/viewform?usp=sharing"
+                target="_blank"
+                style="color: yellow;">連結</a>，將基本資料填妥（包含匿名、電子郵件、臉書網址、風格擇一、建議）後，請臉書私訊我。(作者有權篩選移除臉書資料不完整、重複臉書網址與非台灣地區的用戶)。輸出成品將與原圖尺寸一致，建議
+            2048 x 2048 以上的尺寸。商業合作歡迎私訊。
+        </div>
+        <h5 style="text-align: right;">文案更新日期 20250502</h5>
+        <a style="color: rgb(181, 0, 0);background-color: white;" href="https://www.facebook.com/william77.fun"
+            target="_blank">作者臉書連結</a>
+    </div>
+</body>
+
+</html>
